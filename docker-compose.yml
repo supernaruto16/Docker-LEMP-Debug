@@ -27,7 +27,7 @@ services:
       context: ./php-fpm
       dockerfile: Dockerfile
     volumes:
-      - ./log/php-fpm:/var/log/php-fpm
+      - ./log/php-fpm/:/var/log/php-fpm
       - ./wwwroot:/var/www/html:ro
     environment:
       PS1: "\\u@\\h:\\w\\$$ "
